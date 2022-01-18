@@ -17,13 +17,13 @@ import { MobileNavbar } from '../MobileNavbar';
 const getDefaultLinkActions = (connected: boolean) => {
   return [
     <Link to={`/`} key={'explore'}>
-      <Button className="app-btn">Explore</Button>
+      <Button className="app-btn">메인화면</Button>
     </Link>,
     <Link to={`/artworks`} key={'artwork'}>
-      <Button className="app-btn">{connected ? 'My Items' : 'Artwork'}</Button>
+      <Button className="app-btn">{connected ? '전체상품' : '전체상품'}</Button>
     </Link>,
     <Link to={`/artists`} key={'artists'}>
-      <Button className="app-btn">Creators</Button>
+      <Button className="app-btn">보유상품</Button>
     </Link>,
   ];
 };
